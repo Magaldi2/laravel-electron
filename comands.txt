@@ -2,20 +2,20 @@ EM ORDEM
 	1-CRIAR IMAGEM
 	2-CRIAR CONTAINER
 
-CRIAR A IMAGEM NO DOCKER:
+1-CRIAR A IMAGEM NO DOCKER:
 	docker-compose build --no-cache --force-rm
 
-CRIAR O CONTAINER A PARTIR DA IMAGEM
+2-CRIAR O CONTAINER A PARTIR DA IMAGEM
 	docker-compose up -d
+3-REMOVER ".EXAMPLE" DO ARQUIVO ".ENV"
 
-
-CRIAR A KEY DO PROJETO:
+4-CRIAR A KEY DO PROJETO:
 	docker exec laravel-electron bash -c "php artisan key:generate"
 
-PARA O BANCO DE DADOS
+5-PARA O BANCO DE DADOS
 	docker exec laravel-electron bash -c "php artisan migrate --seed"
 
-LINK LARAVEL:
+6-LINK LARAVEL:
 	http://localhost:9000/public
-LINK PHPMYADMIN:
+7-LINK PHPMYADMIN:
 	http://localhost:9001
