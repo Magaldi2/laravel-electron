@@ -1,20 +1,21 @@
 EM ORDEM
 	1-CRIAR IMAGEM
 	2-CRIAR CONTAINER
-	3-DEPOIS NO FINAL ATUALIZAR
 
 CRIAR A IMAGEM NO DOCKER:
 	docker-compose build --no-cache --force-rm
 
-PARAR O CONTAINER DE RODAR 
-	docker-compose stop
-
 CRIAR O CONTAINER A PARTIR DA IMAGEM
 	docker-compose up -d
 
-ATUALIZAR O CONTAINER:
-	docker exec laravel-electron bash -c "composer update"
+
+CRIAR A KEY DO PROJETO:
+	docker exec laravel-electron bash -c "php artisan key:generate"
 
 PARA O BANCO DE DADOS
-	docker exec laravel-electron bash -c "php artisan migrate"
-	docker exec laravel-electron bash -c "php artisan db:seed"
+	docker exec laravel-electron bash -c "php artisan migrate --seed"
+
+LINK LARAVEL:
+	http://localhost:9000/public
+LINK PHPMYADMIN:
+	http://localhost:9001
