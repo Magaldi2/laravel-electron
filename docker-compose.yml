@@ -1,5 +1,10 @@
 version: '3.8'
 
+networks:
+  my-network:
+    name: my-network
+    driver: bridge
+
 services:
 
   laravel-electron:
@@ -31,5 +36,3 @@ services:
     networks:
       - my-network
 
-networks:
-  my-network:
