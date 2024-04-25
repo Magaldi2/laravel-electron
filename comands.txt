@@ -3,18 +3,15 @@ FAZER OS COMANDOS EM ORDEM:
 1-CRIAR A IMAGEM NO DOCKER E FAZER O CONTAINER A PARTIR DA IMAGEM:
 	docker compose up -d --build
 
-2-REMOVER ".EXAMPLE" DO ARQUIVO ".ENV"
+2-REMOVER ".EXAMPLE" DO ARQUIVO ".ENV" E ALTERAR O CAMPO "DB_PASSWORD=" PARA "DB_PASSWORD=root"
 
-3-ATUALIZAR O COMPOSER
-	docker exec laravel-electron bash -c "composer update"
+3-ATUALIZAR O COMPOSER E GERAR A KEY DO PROJETO
+	docker exec laravel-electron bash -c "composer install && php artisna key:generate"
 
-4-CRIAR A KEY DO PROJETO:
-	docker exec laravel-electron bash -c "php artisan key:generate"
-
-5-PARA O BANCO DE DADOS
+4-PARA O BANCO DE DADOS
 	docker exec laravel-electron bash -c "php artisan migrate --seed"
 
-6-LINK LARAVEL:
+5-LINK LARAVEL:
 	http://localhost:9000/public
-7-LINK PHPMYADMIN:
+6-LINK PHPMYADMIN:
 	http://localhost:9001
