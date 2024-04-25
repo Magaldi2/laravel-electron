@@ -6,7 +6,7 @@ FAZER OS COMANDOS EM ORDEM:
 2-REMOVER ".EXAMPLE" DO ARQUIVO ".ENV" E ALTERAR O CAMPO "DB_PASSWORD=" PARA "DB_PASSWORD=root"
 
 3-ATUALIZAR O COMPOSER E GERAR A KEY DO PROJETO
-	docker exec laravel-electron bash -c "composer install && php artisna key:generate"
+	docker exec laravel-electron bash -c "composer install && php artisan key:generate"
 
 4-PARA O BANCO DE DADOS
 	docker exec laravel-electron bash -c "php artisan migrate --seed"
