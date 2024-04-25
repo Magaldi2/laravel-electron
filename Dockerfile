@@ -25,4 +25,3 @@ RUN docker-php-ext-install gettext intl pdo_mysql gd
 RUN docker-php-ext-configure gd --enable-gd --with-freetype --with-jpeg \
     && docker-php-ext-install -j$(nproc) gd
 
-CMD bash -c "composer update" 
