@@ -11,6 +11,9 @@ FAZER OS COMANDOS EM ORDEM:
 4-PARA O BANCO DE DADOS
 	docker exec laravel-electron bash -c "php artisan migrate --seed"
 
+5-RODE O SERVER NODE
+	docker exec laravel-electron bash -c "npm install && npm run dev"
+
 5-LINK LARAVEL:
 	http://localhost:9000/public
 6-LINK PHPMYADMIN:

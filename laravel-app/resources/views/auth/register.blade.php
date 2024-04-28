@@ -1,7 +1,6 @@
 <x-guest-layout>
     <form method="POST" action="{{ route('register') }}">
         @csrf
-
         <!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Name')" />
@@ -37,6 +36,12 @@
                             name="password_confirmation" required autocomplete="new-password" />
 
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
+        </div>
+        <!-- CEP-->
+        <div>
+            <x-input-label for="CEP" :value="__('cep')" />
+            <x-text-input id="cep" class="block mt-1 w-full" type="text" name="cep" :value="old('cep')" required autofocus autocomplete="name" />
+            <x-input-error :messages="$errors->get('cep')" class="mt-2" />
         </div>
 
         <div class="flex items-center justify-end mt-4">
