@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('email')->unique(); //email colunm 
             $table->string('password'); //password colunm
             $table->string('cep'); //postal code colunm
+            $table->enum('role',['admin','user'])->default('user');
         });
     }
 
