@@ -1,0 +1,27 @@
+FAZER OS COMANDOS EM ORDEM:
+
+1-REMOVER ".EXAMPLE" DO ARQUIVO ".ENV" E ALTERAR O CAMPO "DB_PASSWORD=" PARA "DB_PASSWORD=root"
+
+2-INSTALAR DEPENDENCIAS DO NODE FORA DO CONTAINER
+	npm install
+
+3-CRIAR A IMAGEM NO DOCKER E FAZER O CONTAINER A PARTIR DA IMAGEM:
+	docker compose up -d --build
+
+4-ATUALIZAR O COMPOSER E GERAR A KEY DO PROJETO
+	docker exec laravel-electron bash -c "composer update && php artisan key:generate"
+
+5-PARA O BANCO DE DADOS
+	docker exec laravel-electron bash -c "php artisan migrate --seed"
+
+6-RODE O SERVER NODE
+	docker exec laravel-electron bash -c "npm install && npm run build"
+
+7-RODAR O ELECTRON FORA DO CONTAINER
+	npm start
+
+
+LINK LARAVEL:
+	http://localhost:9000/public
+LINK PHPMYADMIN(servidor:mysql_db | usuario:root | senha:root):
+	http://localhost:9001
