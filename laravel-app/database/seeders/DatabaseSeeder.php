@@ -52,7 +52,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'matue',
             'email' => 'matue@matue.com',
             'password' => Hash::make('password'),
-            'cep'=>'13033195',
+            'cep'=>'13275354',
             'role'=>'user',
         ]);
 
