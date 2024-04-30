@@ -100,7 +100,7 @@ function createWindow () {
   mainWindow = new BrowserWindow({width: 800, height: 600})
 
   // and load the index.html of the app.
-  mainWindow.loadURL('http://'+server.host+':'+server.port+'/')
+  mainWindow.loadURL('http://localhost:9000/public')
 
 /*
 mainWindow.loadURL(url.format({
