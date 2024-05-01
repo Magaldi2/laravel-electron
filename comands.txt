@@ -20,6 +20,13 @@ FAZER OS COMANDOS EM ORDEM:
 7-RODAR O ELECTRON FORA DO CONTAINER
 	npm start
 
+LOGIN ADMIN:
+	xastre@admin.com
+	saopaulo
+
+LOGIN USER:
+	guto@gigantesco.com
+	password
 
 LINK LARAVEL:
 	http://localhost:9000/public
