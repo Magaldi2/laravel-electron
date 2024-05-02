@@ -55,9 +55,6 @@ Este repositório contém um sistema de login desenvolvido utilizando ElectronJS
  - Acesse o link Laravel: [http://localhost:9000/public](http://localhost:9000/public)
  - Acesse o link PHPMyAdmin: [http://localhost:9001](http://localhost:9001) (servidor:mysql_db | usuário: root | senha: root)
 
-**Repositório de Referência:**
-- [Link para o Repositório no GitHub](https://github.com/seu-usuario/login-system-electron)
-
 **Observações:**
 - Certifique-se de seguir as boas práticas de desenvolvimento, como testes unitários, integração contínua, entre outros.
 - Qualquer dúvida ou problema, sinta-se à vontade para entrar em contato.
