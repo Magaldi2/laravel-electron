@@ -79,8 +79,13 @@ Antes de começar, certifique-se de ter os seguintes pré-requisitos instalados 
 
 ## Developers
    - Daniel Rossi
+     - github -> https://github.com/danirso
    - Leonardo Carbelim
+     - github ->  https://github.com/LevvonDev
    - Lucas Berti
-   - Lucas Magaldi  
+     - github -> https://github.com/Bertidev
+   - Lucas Magaldi
+     - github -> https://github.com/MAgalDI02
    - Matheus Anitelli
+     - github -> https://github.com/mttue7
 
