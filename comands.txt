@@ -1,9 +1,12 @@
 PRÉ REQUISITOS:
 1-TER O NODE INSTALADO EM SUA MAQUINA, LINK PARA A INSTALAÇÃO:
-	https://nodejs.org/en
+	https://nodejs.org/en/download
+
 2-TER DOCKER INSTALADO NA SUA MAQUINA
+	https://www.docker.com/products/docker-desktop/
 
 3-TER GIT INSTALADO NA SUA MAQUINA
+	https://git-scm.com/downloads
 
 COMO USAR:
 1-dê o comando "git clone [link do repositorio]" no terminal em uma pasta de sua escolha, ou baixe o .zip através da release
