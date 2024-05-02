@@ -20,7 +20,16 @@
                             <div class="w-full mx-auto bg-white shadow-lg rounded-sm border border-gray-200">
                                 <header class="px-5 py-4 border-b border-gray-100">
                                     <h2 class="font-semibold text-gray-800">Users</h2>
+                                    <a href="{{ route('admin.create') }}">
+                                    <x-primary-button>{{ __('Add New User') }}</x-primary-button>
+                                    </a>
                                 </header>
+                                <hr />
+                                @if(Session::has('success'))
+                                <div class="alert alert-success" role="alert">
+                                    {{ Session ::get('success')}}
+                                </div>
+                                @endif
                                 <div class="p-3">
                                     <div class="overflow-x-auto">
                                         <table class="table-auto w-full">
@@ -41,7 +50,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody class="text-sm divide-y divide-gray-100">
-                                    @foreach($users as $user)
+                                    @forelse($users as $user)
                                                 <tr>
                                                     <td class="p-2 whitespace-nowrap">
                                                         <div class="flex items-center">
@@ -55,12 +64,22 @@
                                                         <div class="text-left font-medium">{{$user->cep}}</div>
                                                     </td>
                                                     <td>
-                                                        <a href="{{ route('profile.edit') }}">
+                                                        <a href="{{ route('admin.edit',$user->id) }}">
                                                         <x-primary-button>{{ __('Edit') }}</x-primary-button>
+                                                        </a>
+
+                                                        <a href="{{ route('admin.delete',$user->id) }}">
+                                                        <x-secondary-button>{{ __('Delete') }}</x-secondary-button>
                                                         </a>
                                                     </td>
                                                 </tr>
-                                    @endforeach
+                                    @empty
+                                                <tr>
+                                                <td class="p-2 whitespace-nowrap">
+                                                        <div class="text-left">No Users Found!</div>
+                                                </td>
+                                                </tr>
+                                    @endforelse
                                             </tbody>
                                         </table>
                                     </div>
