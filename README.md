@@ -1,6 +1,14 @@
 # Login System com ElectronJS
 
-Este repositório contém um sistema de login desenvolvido utilizando **ElectronJS**, **Docker**, **Laravel**, **PHP** e uma API para preenchimento automático de endereços a partir de um CEP fornecido pelo usuário.
+Este repositório contém um sistema de login desenvolvido utilizando:
+- <img src="https://static-00.iconduck.com/assets.00/electron-icon-472x512-8swdbwbh.png" alt="ElectronJS" width="24" height="24"> **ElectronJS** : Framework para criar aplicativos de desktop multiplataforma usando tecnologias web (HTML, CSS e JavaScript).
+- <img src="https://static-00.iconduck.com/assets.00/docker-icon-icon-2048x1479-cres2he9.png" alt="Docker" width="24" height="24"> **Docker** : Plataforma para desenvolver, enviar e executar aplicativos em contêineres.
+- <img src="https://static-00.iconduck.com/assets.00/laravel-icon-497x512-uwybstke.png" alt="Laravel" width="24" height="24"> **Laravel** : Framework PHP para desenvolvimento de aplicativos web robustos e escaláveis.
+- <img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" alt="PHP" width="24" height="24"> **PHP** : Linguagem de programação amplamente usada para desenvolvimento web.
+- <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" alt="MySQL" width="24" height="24"> **MySQL** : Sistema de gerenciamento de banco de dados relacional.
+- E uma API para preenchimento automático de endereços a partir de um CEP fornecido pelo usuário.
+
+
 
 ## Instruções de Instalação e Execução
 
@@ -80,18 +88,18 @@ Antes de começar, certifique-se de ter os seguintes pré-requisitos instalados 
 - Certifique-se de seguir as boas práticas de desenvolvimento, como testes unitários, integração contínua, entre outros.
 - Se tiver alguma dúvida ou problema, sinta-se à vontade para entrar em contato.
 
-## Repositorio de Baseado para a aplicação Electron
+## Repositorio Baseado para a aplicação ElectronJS junto com PHP
    - ELECTRON-4-PHP de aj-tech -> https://github.com/aj-techsoul/ELECTRON-4-PHP
 
 ## Developers
    - Daniel Rossi
-     - github -> https://github.com/danirso
+     - GitHub -> https://github.com/danirso
    - Leonardo Carbelim
-     - github ->  https://github.com/LevvonDev
+     - GitHub ->  https://github.com/LevvonDev
    - Lucas Berti
-     - github -> https://github.com/Bertidev
+     - GitHub -> https://github.com/Bertidev
    - Lucas Magaldi
-     - github -> https://github.com/MAgalDI02
+     - GitHub -> https://github.com/MAgalDI02
    - Matheus Anitelli
-     - github -> https://github.com/mttue7
+     - GitHub -> https://github.com/mttue7
 
