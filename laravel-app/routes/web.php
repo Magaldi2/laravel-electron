@@ -29,11 +29,15 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-route::get('/admin/dashboard',[AdminController::class,'dashboard'])->name('admin.dashboard');
-route::get('/admin/create',[AdminController::class,'create'])->name('admin.create');
-Route::post('/admin/save',[AdminController::class,'save'])->name('admin.save');
-Route::get('/admin/edit/{id}',[AdminController::class,'edit'])->name('admin.edit');
-Route::put('/admin/update/{id}',[AdminController::class,'update'])->name('admin.update');
-Route::get('/admin/delete/{id}',[AdminController::class,'delete'])->name('admin.delete');
+Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+Route::get('/admin/create', [AdminController::class, 'create'])->name('admin.create');
+Route::post('/admin/save', [AdminController::class, 'save'])->name('admin.save');
+Route::get('/admin/edit/{id}', [AdminController::class, 'edit'])->name('admin.edit');
+Route::put('/admin/update/{id}', [AdminController::class, 'update'])->name('admin.update');
+Route::get('/admin/delete/{id}', [AdminController::class, 'delete'])->name('admin.delete');
 
-require __DIR__.'/auth.php';
+Route::get('/forgot-password', function () {
+    return view('auth.forgot-password');
+})->middleware('guest')->name('password.request');
+
+require __DIR__ . '/auth.php';
