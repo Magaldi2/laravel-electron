@@ -65,6 +65,12 @@ Antes de começar, certifique-se de ter os seguintes pré-requisitos instalados 
   - **Login Admin:** xastre@admin.com | senha: saopaulo
   - **Login User:** guto@gigantesco.com | senha: password
 
+### Testes
+- Para rodar os teste basta usar o seguitne código:
+   ```
+   docker exec laravel-electron bash -c "php artisan test"
+   ```
+
 ### Acessando a Aplicação via web:
 - Acesse o link Laravel: http://localhost:9000/public
 - Acesse o link PHPMyAdmin: http://localhost:9001 (servidor:mysql_db | usuário: root | senha: root)
